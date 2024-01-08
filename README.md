@@ -1,4 +1,4 @@
-# ShenanigansMacServerFace
+# MacServerFace
 
 Do you have an HID injection device? OMG Cable, ALOA, BADUsb, or Flipper 0? Then this server is for you. Instead of making custom scripts on each device or even your only device, use this server to host your own scripts and be able to receive data from the client running the scripts. For your HID or Ducky scripts change one word and have access to all scripts hosted on the server. I have a few scripts to get you going and a fake login page(for fun). Mac and Linux scripts coming soon.
 
@@ -24,7 +24,7 @@ This is a simple Express Server that allows for scripts to be served and uploads
 in the directory you want to store the project run the command:
 
 ```bash
-git clone https://github.com/Pmacdon15/ShenanigansMacServerFace
+git clone https://github.com/Pmacdon15/MacServerFace
 ```
 
 Next we will need to install the Node Modules, I will list the commands here:
