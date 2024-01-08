@@ -17,7 +17,7 @@ This project is for educational purposes and not to be used maliciously. This is
 
 ## Description
 
-This is a simple Express Server that allows for scripts to be served and uploads sent to the server. It also allows you to access a collection of Powershell, Bash, Ducky, HID scripts and a fake pishing pages. This server includes scripts to launch other scripts or webpages from the server. Making it so that you can change one line of code in your script and give your HID device access to all the scripts on the server.
+This is a simple Express Server that allows for scripts to be served and uploads sent to the server. It also allows you to access a collection of Powershell, Bash, Ducky, HID scripts and a fake pishing page. This server includes scripts to launch other scripts or webpages from the server. Making it so that you can change one line of code in your script and give your HID device access to all the scripts on the server.
 
 ## Installation
 
