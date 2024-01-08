@@ -180,8 +180,10 @@ Other wise you can use an HID injection device and uses one of the trigger scrip
 2. launchPsScriptAdmin.js
 
 ### Phishing site
-1. http://<ipaddress>:3002/notGoogle
-
+1. notGoogle
+```Html
+http://<ipaddress>:3002/notGoogle
+```
 
 
 
