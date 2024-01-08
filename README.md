@@ -30,7 +30,7 @@ git clone https://github.com/Pmacdon15/MacServerFace
 Next we will need to install the Node Modules, I will list the commands here:
 
 ```bash
-cd ShenanigansMacServerFace
+cd MacServerFace
 ```
 
 ```bash
