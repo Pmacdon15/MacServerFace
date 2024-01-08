@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /* Change the font family here */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main {
+    height: 55%;
+    width: 25%;
+    border: rgba(128, 128, 128, 0.495) 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+input {
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    height: 30px;
+    /* margin: 5px auto; */
+    padding: 1%;
+    border: 1px solid grey;
+    background-color: rgba(80, 160, 230, 0.347);
+}
+
+input[type="submit"] {
+    width: 80%;
+    height: 30px;
+    color: white;
+    /* Add this line to change the font color to white */
+
+    /* margin: 5px 0; */
+    padding: 1%;
+    border: 1px solid grey;
+    background-color: #428ff4;
+}
+
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+div {
+    width: 100%;    
+    
+}
+
+.flex-container {
+    margin-top: 15%;
+    /* background-color: rgba(80, 160, 230, 0.33); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding: 1%; */
+}
+
+.flex-container > div{
+    width: 100%;    
+    text-align: center;
+}

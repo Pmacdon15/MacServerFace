@@ -1,0 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+notGoogleUSB.exe filter=lfs diff=lfs merge=lfs -text
+notGoogleS.exe filter=lfs diff=lfs merge=lfs -text

