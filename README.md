@@ -83,11 +83,14 @@ python3 setup.py
 
 This will allow you to enter a new Ip Address or localhost and automatically change all the Powershell, Ducky, HID scripts to reflect the entered Ip address.
 
-Replace pickAServerName  with a you choice.
+I recommend using pm2 so that you can do other things on your terminal while running the server, like checking the capturedInfo folder after running a script on a client's computer.
 
-I recommend using Pm2 so that you can do other things on your terminal while running the server, like checking the capturedInfo folder after running a script on a client's computer.
+```powershell
+npm install pm2 -g
+```
 
-Remember to apply appropriate port forwarding if accessing the server from outside the network.
+> [!NOTE]
+> Remember to apply appropriate port forwarding if accessing the server from outside the network.
 
 ## Scripts
 
