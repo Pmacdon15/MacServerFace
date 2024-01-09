@@ -165,6 +165,8 @@ This should dump all the Wlan profiles on the client's computer although I have 
 
 ## Execution
 
+### Starting the Server
+
 To start the server 
 
 ```bash
