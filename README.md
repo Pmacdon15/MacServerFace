@@ -34,7 +34,9 @@ This is a simple Express Server that allows for scripts to be served and uploads
 
 ## Installation
 
-in the directory you want to store the project run the command:
+You should have Node.js installed to begin to installing this project.
+
+In the directory you want to store the project run the command:
 
 ```bash
 git clone https://github.com/Pmacdon15/MacServerFace
