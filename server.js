@@ -68,6 +68,38 @@ app.use(
   })
 );
 
+
+// Endpoint to list files
+app.get('/listFiles', (req, res) => {
+  const folderPath1 = path.join(__dirname, 'capturedInfo');
+  const folderPath2 = path.join(__dirname, 'uploads');
+
+  const listFilesInFolder = (folderPath, folderName) => {
+    fs.readdir(folderPath, (err, files) => {
+      if (err) {
+        return res.status(500).send(`Error reading folder contents in ${folderPath}.`);
+      }
+
+      // Generate HTML with download links
+      const fileListHTML = files.map(file => `<a href="/${folderName}/${file}" download>${file}</a>`).join('<br>');
+      res.write(`<h2>Files in the ${folderName} folder:</h2><p>${fileListHTML}</p>`);
+
+      // If all folders have been processed, send the response
+      if (folderName === 'uploads') {
+        res.end();
+      }
+    });
+  };
+
+  // Set content type as HTML
+  res.setHeader('Content-Type', 'text/html');
+
+  // List files from 'capturedInfo' folder
+  listFilesInFolder(folderPath1, 'capturedInfo');
+
+  // List files from 'uploads' folder
+  listFilesInFolder(folderPath2, 'uploads');
+});
 // Serve scripts
 // Server script files for use in the client
 app.use("/scripts", express.static(__dirname + "/scripts"));

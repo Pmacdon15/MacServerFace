@@ -27,6 +27,21 @@ This project is for educational purposes and not to be used maliciously. This is
   - [wifiDump.ps1](#wifidumpps1)
   - [wifiDumpMac.sh](#wifidumpmacsh)
 - [Execution](#execution)
+  - [Starting the Server](#to-start-the-server)
+  - [Installing pm2 (Optional)](#installing-pm2-is-optional)
+  - [Manually Running Scripts](#manually)
+    - [PowerShell](#powershell)
+    - [Bash](#bash)
+  - [DuckyScript](#duckyscript)
+    - [launchPsScript.txt](#launchpsscripttxt)
+    - [launchPsScriptAdmin.txt](#launchpsscriptadmintxt)
+  - [HIDScript (ALOA)](#hidscriptaloa)
+    - [launchPsScript.js](#launchpsscriptjs)
+    - [launchPsScriptAdmin.js](#launchpsscriptadminjs)
+  - [Phishing Site](#phishing-site)
+    - [notGoogle](#notgoogle)
+  - [Downloading Captured Information](#downloading-captured-information)
+    - [List Files Endpoint](#list-files-endpoint)
 
 ## Description
 
@@ -171,6 +186,8 @@ or if you installed pm2
 pm2 start server.js --name pickAServerName
 ```
 
+### Manually 
+
 After the server is running you can manually call a script make sure ipaddress and scriptname are updated(ipaddress can be updated automatically with setup.py), then enter the above code in to PowerShell. The below code can be found in the powerShell folder file named launchPsScript.ps1
 
 ```powershell
@@ -202,6 +219,9 @@ Other wise you can use an HID injection device and uses one of the trigger scrip
 ```Html
 http://<ipaddress>:3002/notGoogle
 ```
-
-
-
+### Downloading captured information 
+List files endpoint
+```HTML
+http://<ipaddress>:3002/listFiles
+```
+Allows you to download any information or files you have captured.
