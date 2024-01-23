@@ -69,7 +69,7 @@ app.use(
 );
 
 
-// Endpoint to list files
+// // Serve listFiles
 // app.get('/listFiles', (req, res) => {
 //   const folderPath1 = path.join(__dirname, 'capturedInfo');
 //   const folderPath2 = path.join(__dirname, 'uploads');
@@ -91,15 +91,15 @@ app.use(
 //     });
 //   };
 
-  // Set content type as HTML
-  res.setHeader('Content-Type', 'text/html');
+//   // Set content type as HTML
+//   res.setHeader('Content-Type', 'text/html');
 
-  // List files from 'capturedInfo' folder
-  listFilesInFolder(folderPath1, 'capturedInfo');
+//   // List files from 'capturedInfo' folder
+//   listFilesInFolder(folderPath1, 'capturedInfo');
 
-  // List files from 'uploads' folder
-  listFilesInFolder(folderPath2, 'uploads');
-});
+//   // List files from 'uploads' folder
+//   listFilesInFolder(folderPath2, 'uploads');
+// });
 // Serve scripts
 // Server script files for use in the client
 app.use("/scripts", express.static(__dirname + "/scripts"));
