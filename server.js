@@ -70,26 +70,26 @@ app.use(
 
 
 // Endpoint to list files
-app.get('/listFiles', (req, res) => {
-  const folderPath1 = path.join(__dirname, 'capturedInfo');
-  const folderPath2 = path.join(__dirname, 'uploads');
+// app.get('/listFiles', (req, res) => {
+//   const folderPath1 = path.join(__dirname, 'capturedInfo');
+//   const folderPath2 = path.join(__dirname, 'uploads');
 
-  const listFilesInFolder = (folderPath, folderName) => {
-    fs.readdir(folderPath, (err, files) => {
-      if (err) {
-        return res.status(500).send(`Error reading folder contents in ${folderPath}.`);
-      }
+//   const listFilesInFolder = (folderPath, folderName) => {
+//     fs.readdir(folderPath, (err, files) => {
+//       if (err) {
+//         return res.status(500).send(`Error reading folder contents in ${folderPath}.`);
+//       }
 
-      // Generate HTML with download links
-      const fileListHTML = files.map(file => `<a href="/${folderName}/${file}" download>${file}</a>`).join('<br>');
-      res.write(`<h2>Files in the ${folderName} folder:</h2><p>${fileListHTML}</p>`);
+//       // Generate HTML with download links
+//       const fileListHTML = files.map(file => `<a href="/${folderName}/${file}" download>${file}</a>`).join('<br>');
+//       res.write(`<h2>Files in the ${folderName} folder:</h2><p>${fileListHTML}</p>`);
 
-      // If all folders have been processed, send the response
-      if (folderName === 'uploads') {
-        res.end();
-      }
-    });
-  };
+//       // If all folders have been processed, send the response
+//       if (folderName === 'uploads') {
+//         res.end();
+//       }
+//     });
+//   };
 
   // Set content type as HTML
   res.setHeader('Content-Type', 'text/html');
